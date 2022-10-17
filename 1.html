@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p
+            {
+                padding: 5px 30px;
+                width: 200px;
+                position: relative;
+                border-radius: 7px;
+            }
+
+            p:nth-child(odd)
+            {
+                background: linear-gradient(45deg, rgb(162, 253, 102), rgb(238, 144, 250));
+            }
+            p:nth-child(even)
+            {
+                background: linear-gradient(45deg, rgb(233, 222, 128), rgb(90, 245, 90));
+            }
+            p:first-child
+            {
+                background: linear-gradient(45deg, pink, aqua);
+            }
+            p:last-child
+            {
+                background: linear-gradient(45deg, rgb(253, 102, 102), lightblue);
+            }
+            p:first-letter
+            { 
+                font-size: 1.5em;
+                background-color: rgb(241, 241, 241);
+                color: rgb(5, 5, 5);
+                margin-right: 0.2em;
+                padding: 0 0.2em 0.1em 0.2em;
+                border-radius: 0.1em;
+            }
+            p:before
+            {
+                content: '\201e';
+                position: absolute;
+                top: -20px;
+                left: 5px;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 1;
+            }
+            p:after
+            {
+                content: '\201c';
+                position: absolute;
+                font-size: 30px;
+                right: 5px;
+                font-weight: bold;
+                line-height: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Первый элемент</p>
+        <p>Второй элемент</p>
+        <p>Третий элемент</p>
+        <p>Четевертый элемент</p>
+        <p>Пятый элемент</p>
+        <p>Шестой элемент</p>
+        <p>Седьмой элемент</p>
+        <p>Восьмой элемент</p>
+        <p>Девятый элемент</p>
+        <p>Десятый элемент</p>
+    </body>
+</html>
