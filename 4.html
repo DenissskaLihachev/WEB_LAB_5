@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           button
+            {
+                margin-top: 300px;
+                margin-left: 700px;
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                animation-name: moving;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                -timing-function: linear;
+            }
+            @keyframes moving
+             {
+            0%
+             {
+                transform:translate(0px, 0px);
+             }
+             25%
+             {
+                transform:translate(500px, 0px);
+                background-color: blue;
+             }
+             50%
+             {
+                transform:translate(500px, 500px);
+                background-color: purple;
+             }
+             75%
+             {
+                transform:translate(0px, 500px);
+                background-color: red;
+             }
+             100%
+             {
+                transform:translate(0px, 0px);
+                background-color: aquamarine;
+             }
+            
+            }
+
+            @media (max-width: 1900px) and (orientation: landscape)
+            {
+                button
+            {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: aquamarine;
+                animation-name: moving;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                -timing-function: linear;
+            }
+                @keyframes moving
+             {
+            0%
+             {
+                transform: rotate(0deg) translateX(150px) rotate(0deg);
+             }
+             25%
+             {
+                transform: rotate(90deg) translateX(150px) rotate(90deg);
+                background-color: blue;
+             }
+             50%
+             {
+                transform: rotate(180deg) translateX(150px) rotate(180deg);
+                background-color: purple;
+             }
+             75%
+             {
+                transform: rotate(270deg) translateX(150px) rotate(270deg);
+                background-color: red;
+             }
+             100%
+             {
+                transform: rotate(360deg) translateX(150px) rotate(360deg);
+                background-color: aquamarine;
+             }
+            
+            }
+            }
+        </style>
+    </head>
+    <body>
+      <h1>Задание 4</h1>
+        <button>
+        </button>
+    </body>
+</html>

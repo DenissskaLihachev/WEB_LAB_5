@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav
+            {
+			    margin: 100px 0;
+                width: 100px;
+			    background-color: #c2c2c2;
+                border-radius: 7px 7px 0px 0px;
+			}
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			nav ul
+            {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			}
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li
+            {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    background-color: #c2c2c2;
+			}
+			
+			/* стилизуем ссылки */
+			nav a
+            {
+                background-color: #c2c2c2;
+			    display:block;
+			    padding:0 10px;
+			    color:#FFF;
+			    font-size:20px;
+			    line-height: 60px;
+			    text-decoration:none;
+			}
+            nav a:hover
+            {
+			    background-color:rgb(134, 174, 226); 
+			}
+
+            nav ul ul
+            {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+			}
+			
+			/* отображаем выпадающий список при наведении */
+			nav ul li:hover > ul
+            {
+			    display:inherit;
+			}
+			
+			/* первый уровень выпадающего списка */
+			nav ul ul li
+            {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}
+
+        </style>
+    </head>
+    <body>
+		<h1>Задание 3</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Правка</a>
+                    <!-- первый уровень выпадающего списка -->
+                    <ul>
+                        <li><a href="#">Вырезать</a></li>
+                        <li><a href="#">Копировать</a></li>
+                        <li><a href="#">Вставить</a></li>
+                        <li><a href="#">Удалить</a></li>
+                    </ul>
+            </ul>
+        </nav>
+    </body>
+</html>
