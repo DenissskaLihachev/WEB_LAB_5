@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .task5>div>p
+          {
+            margin-top: 1%;
+            padding-top: 1%;
+            padding-bottom: 2%;
+          }
+          .grid 
+          {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            font-size: xx-large;
+          } 
+          .grid > * 
+          {
+            padding: 5px;
+            text-align: center;
+            background-color: #ffbf94;
+            border-radius: 5px;
+            margin: 1px;
+          }
+          img
+          {
+            border-radius: 5px;
+            width: 33%;
+          }
+
+          @media (max-width: 1200px)
+          {
+            .grid 
+            {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-template-rows: auto auto auto;
+              font-size: x-large;
+            } 
+          }
+          @media (max-width: 800px)
+          {
+            .grid 
+            {
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: auto auto auto auto;
+              font-size: large;
+            } 
+          }
+          
+        </style>
+    </head>
+    <body>
+      <div class="grid">
+            <div>
+                <img src="https://fanfics.me/images/fandoms_heroes/46-1530624413.jpg" width="50%">
+                <p>Саске</p>
+            </div>
+            <div>
+                <img src="https://fanfics.me/images/fandoms_heroes/46-1530624034.jpg" width="50%">
+                <p>Сакура</p>
+            </div>
+            <div>
+                <img src="https://fanfics.me/images/fandoms_heroes/46-1530627036.jpg" width="50%">
+                <p>Наурто</p>
+            </div>
+            <div>
+                <img src="https://fanfics.me/images/fandoms_heroes/46-1530705880.jpg" width="50%">
+                <p>Какаши</p>
+            </div>
+            <div>
+                <img src="https://fanfics.me/images/fandoms_heroes/46-1530774941.jpg" width="50%">
+                <p>Гаара</p>
+            </div>
+            <div>
+                <img src="https://fanfics.me/images/fandoms_heroes/46-1530708872.jpg" width="50%">
+                <p>Итачи</p>
+            </div>
+      </div>
+    </body>
+</html>
